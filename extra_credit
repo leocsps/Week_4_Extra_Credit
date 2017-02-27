@@ -2,28 +2,6 @@
 # _*_ coding: utf-8 _*_
 """Week 4 bonus task"""
 
-
-def celsius_to_fahrenheit(degrees):
-    """Calculate degrees in fahrenheit.
-
-    Args:
-        degrees(mixed): degress in celsius.
-
-    Returns:
-        mixed: degrees converted from celsius to fahrenheit.
-
-    Examples:
-
-        >>> celsius_to_fahrenheit(100)
-        212
-
-        >>> celsius_to_fahrenheit(217)
-        519
-    """
-    fahrenheit = degrees * 9 / 5 + 32
-    return fahrenheit
-
-
 ABSOLUTE_DIFFERENCE = 273.15
 
 
@@ -48,6 +26,27 @@ def kelvin_to_celsius(degrees):
     return float('{0:.2f}'.format(celsius))
 
 
+def celsius_to_fahrenheit(degrees):
+    """Calculate degrees in fahrenheit.
+
+    Args:
+        degrees(mixed): degress in celsius.
+
+    Returns:
+        mixed: degrees converted from celsius to fahrenheit.
+
+    Examples:
+
+        >>> celsius_to_fahrenheit(100)
+        212
+
+        >>> celsius_to_fahrenheit(217)
+        519
+    """
+    fahrenheit = degrees * 9 / 5 + 32
+    return fahrenheit
+
+
 def kelvin_to_fahrenheit(degrees):
     """Calculate degrees in fahrenheit.
 
@@ -66,4 +65,4 @@ def kelvin_to_fahrenheit(degrees):
         440.33
     """
     fahrenheit = celsius_to_fahrenheit(kelvin_to_celsius(degrees))
-    return float('{0:.2f}'.format(fahrenheit))
+    return float('{0:.2f}'.format(fahrenheit)
